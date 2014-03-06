@@ -1,4 +1,10 @@
-source 'https://rubygems.org'
+group :development, :test do
+  source 'https://rubygems.org'
+end
+group :production do
+  source 'http://ruby.taobao.org/'
+end
+
 
 gem 'rails', '3.2.17'
 
