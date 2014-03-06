@@ -1,0 +1,12 @@
+<%= determine_common_content('common', 'jumbotron')%>
+<div class="row">
+    <div class="col-sm-3 left_body">
+        <%= determine_common_content('common', 'left_body')%>
+    </div>
+    <div class="col-sm-8 col-sm-offset-1">
+        <%= render_content_page(@page, {
+                :hide_sections => [:jumbotron,:left_body,:top_body],
+                :can_use_fallback => !local_assigns[:show_empty_sections] && !local_assigns[:remove_automatic_sections]
+        }) %>
+    </div>
+</div>
