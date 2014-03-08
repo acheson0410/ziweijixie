@@ -38,5 +38,5 @@ production:
   database: ziweijixie_production
   pool: 5
   username: root
-  password: password
+  password: pa55word
   socket: /var/run/mysqld/mysqld.sock
