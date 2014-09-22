@@ -2,3 +2,22 @@
 @import "bootstrap/theme";
 
 @import "./justified-nav";
+
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+.carousel-caption {
+  z-index: 10;
+}
+.carousel .item {
+  background-color: #777;
+  height: 500px;
+}
+.carousel-inner > .item > img {
+  height: 500px;
+  left: 0;
+  min-width: 100%;
+  position: absolute;
+  top: 0;
+}
