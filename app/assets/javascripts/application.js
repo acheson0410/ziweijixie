@@ -21,7 +21,7 @@ $(document).ready(function(){
         var imageSrc = $(this).find('img').attr('src');
         var title = $(this).find('img').attr('title');
         var alt = $(this).find('img').attr('alt');
-        var modalBodyHtml = "<img src=" + imageSrc + " title=" + title + " alt=" + alt + ">";
+        var modalBodyHtml = "<img src=" + imageSrc + " title=" + title + " alt=" + alt + " width='100%' height='100%'>";
         $('#myModal').find('.modal-body').html(modalBodyHtml);
     });
 });
