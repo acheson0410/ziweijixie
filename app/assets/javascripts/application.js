@@ -15,3 +15,13 @@
 //= require_tree .
 // Loads all Bootstrap javascripts
 //= require bootstrap
+$(document).ready(function(){
+    $('a.equipment').click(function(event){
+        event.preventDefault();
+        var imageSrc = $(this).find('img').attr('src');
+        var title = $(this).find('img').attr('title');
+        var alt = $(this).find('img').attr('alt');
+        var modalBodyHtml = "<img src=" + imageSrc + " title=" + title + " alt=" + alt + ">";
+        $('#myModal').find('.modal-body').html(modalBodyHtml);
+    });
+});
